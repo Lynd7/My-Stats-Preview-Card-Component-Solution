@@ -1,0 +1,134 @@
+
+
+/* --Custom Properties-- */
+:root {
+    --clr-primary-900 :hsl(233, 47%, 7%);
+    --clr-primary-800 :hsl(244, 38%, 16%);
+    --clr-primary-300 :hsl(277, 64%, 61%);
+
+    --clr-neutral-100:hsl(0, 0%, 100%);
+    --clr-neutral-150:hsla(0, 0%, 100%, 0.75);
+    --clr-neutral-180:hsla(0, 0%, 100%, 0.6);
+
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --ff-Inter:'Inter', sans-serif;
+    --ff-Lexend:'Lexend Deca', sans-serif;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    font-size: 15px;
+    color: white;
+    background-color: var(--clr-primary-900);
+}
+.product__img {
+    position: relative;
+}
+.product__img::after {
+    content: '';
+    background-color: rgb(100, 52, 148, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    height: 680px;
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product__content {
+    background-color: var(--clr-primary-800);
+    padding: 28px;
+    text-align: center;
+}
+.content__title {
+    font-size: 25px;
+    font-weight: var(--fw-700);
+    font-family: var(--ff-Inter);
+    color: white;
+    margin-bottom: 15px
+}
+.content__title span {
+    color: var(--clr-primary-300);
+}
+.content__text {
+    font-family: var(--ff-Inter);
+    font-weight: var(--fw-400);
+    font-size: 14px;
+    color: var(--clr-neutral-150);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.content__stats {
+    display: grid;
+    gap: 18px;
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+.content__stats .number {
+    font-weight: var(--fw-700);
+    font-family: var(--ff-Inter);
+    font-size: 20px;
+    color: white;
+}
+.content__stats .text {
+    font-family: var(--ff-Lexend);
+    text-transform: uppercase;
+    font-size: 10px;
+    color: var(--clr-neutral-180);
+    letter-spacing: 1px;
+} 
+
+@media (min-width: 380px) {
+    .container {
+        display: flex;
+        max-width: 1200px;
+        height: 500px;
+}
+    .product__content {
+        order: 1;
+        width: 80px;
+    }
+    .product__img {
+        order: 2;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .product__content {
+        width: 600px;
+        padding: 70px 0 70px 70px;
+        text-align: start;
+        }
+    .content__stats {
+        display: flex;
+    }
+    .content__title {
+        width: 80%;
+        margin: 0 0 30px 0;
+        font-size: 40px;
+        }
+    .content__text {
+        width: 80%;
+        margin-bottom: 80px;
+        font-size: 17px;
+        }
+    .content__stats {
+        gap: 80px;
+        }
+    .content__stats .number {
+        font-size: 25px;
+        }
+    .content__stats .text {
+        font-size: 13px;
+        } 
+}
+   

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----My Css---->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!----Google Fonts---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <picture class="product__img">
+          <source
+            srcset="images/image-header-desktop.jpg"
+            media="(min-width:380px)"
+          />
+          <img src="images/image-header-mobile.jpg" alt="" />
+        </picture>
+        <div class="product__content">
+          <h1 class="content__title">
+            Get <span>insights</span>that help your business grow.
+          </h1>
+          <p class="content__text">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div class="content__stats">
+            <div class="companies">
+              <p class="number">10k+</p>
+              <p class="text">companies</p>
+            </div>
+            <div class="templates">
+              <p class="number">314</p>
+              <p class="text">templates</p>
+            </div>
+            <div class="queries">
+              <p class="number">12M+</p>
+              <p class="text">queries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
