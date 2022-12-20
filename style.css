@@ -26,16 +26,14 @@ body {
 }
 .product__img {
     position: relative;
+    background-color: hsl(277, 64%, 61%);
 }
-.product__img::after {
-    content: '';
-    background-color: rgb(100, 52, 148, 0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+
+img {
+    opacity: 0.8;
+    mix-blend-mode: multiply;
 }
+
 .container {
     height: 680px;
     max-width: 300px;
