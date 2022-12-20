@@ -34,8 +34,8 @@ img {
 }
 
 .container {
-    height: 780px;
-    max-width: 330px;
+    height: 680px;
+    max-width: 300px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -68,6 +68,9 @@ img {
     gap: 18px;
     margin-bottom: 5px;
     line-height: 1.6;
+}
+.content__stats ul li {
+    list-style: none;
 }
 .content__stats .number {
     font-weight: var(--fw-700);
