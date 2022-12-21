@@ -100,7 +100,7 @@ img {
         order: 1;
         width: 50%;
         height: 100%;
-        padding: 60px 0 60px 60px;
+        padding: 70px 0 60px 70px;
         text-align: start;
     }
     .product__img {
@@ -127,7 +127,7 @@ img {
         gap: 75px;
     }
     .content__stats .number {
-        font-size: 1.375rem;
+        font-size: 1.4rem;
     }
     .content__stats .text {
         font-size: 0.75rem;
